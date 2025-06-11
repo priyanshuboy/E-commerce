@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    
+  <div id="toast" class="toast">Item added to cart</div>  
 <div class="TopHead">
         <div>
        <h1 class="Title">SHOPx</h1>  
@@ -17,21 +17,20 @@
         
        <div class="HeadItems"><i class="fa fa-search"></i><input class="Input" type="text" placeholder= "    Search Product..."></div> 
              
-       <div class="Shopping-icon"><i class="fa fa-shopping-cart" style="font-size: 24px;"></i></div>
+       <div class="Shopping-icon"><i class="fa fa-shopping-cart" style="font-size: 24px;"></i><p id="value">0</p></div>
        <div class="Like-icon"><i class="fa fa-heart" style="font-size: 20px;"></i></div>
            
      </div>
         
     <hr style="border: 1px solid #ebebeb; opacity: 20%; width: 100%;"> 
    
-   
-   
           <div class="links">
-                 <a class="link" href="http://localhost3000">Home</a>
+                 <a class="link" href="/">Home</a>
                  <a class="link" href="/">Today's deal</a>
                  <a class="link" href="/">Trending Product</a>
          </div>
    
+
   <div class="slides-container">
     <div class="slides">
         <img src="images/image3.webp" >
@@ -43,7 +42,7 @@
         <img src="images/image1.jpeg" >
     </div>
  </div>
- <div style="position: relative; top: 60px ; left:480px; font-weight: 300px; color: white;"><h2>Explore Top Catagories</h2></div>
+ <div style="position: relative; top: 60px ; left:380px; font-weight: 300px; color: white;"><h2>Explore Top Catagories</h2></div>
    <div class="catogaries">
    
     
@@ -67,7 +66,12 @@
     <p><strong style="font-size: 14px; position: relative; bottom: 10px;">₹</strong>
      <span style="font-size: 20px; position: relative; right: 2px;">28,000</span>
       <span style="color: rgb(211, 195, 195); position: relative; left: 10px;">M.R.P ₹30,000</span>
-      <hr style="position: relative; bottom: 27px; left: 10px; width: 20%;">
+           
+           
+       <button class="btn" ><strong><i class="fa fa-shopping-cart" style="font-size: 14px;"></i></strong></button>    
+           
+      <hr style="position: relative; bottom: 27px; left: 10px; width: 20%;"> 
+     
     </p>
     </div>
      </div>  
@@ -79,6 +83,7 @@
     <p><strong style="font-size: 14px; position: relative; bottom: 10px;">₹</strong>
      <span style="font-size: 20px; position: relative; right: 2px;">28,000</span>
       <span style="color: rgb(211, 195, 195); position: relative; left: 10px;">M.R.P ₹30,000</span>
+       <button class="btn" onclick="AddedtoCart" ><strong><i class="fa fa-shopping-cart" style="font-size: 14px;"></i></strong></button>    
       <hr style="position: relative; bottom: 27px; left: 10px; width: 20%;">
     </p>
     </div>
@@ -91,6 +96,7 @@
     <p><strong style="font-size: 14px; position: relative; bottom: 10px;">₹</strong>
      <span style="font-size: 20px; position: relative; right: 2px;">28,000</span>
       <span style="color: rgb(211, 195, 195); position: relative; left: 10px;">M.R.P ₹30,000</span>
+       <button class="btn" ><strong><i class="fa fa-shopping-cart" style="font-size: 14px;"></i></strong></button>    
       <hr style="position: relative; bottom: 27px; left: 10px; width: 20%;">
     </p>
     </div>
@@ -104,6 +110,7 @@
     <p><strong style="font-size: 14px; position: relative; bottom: 10px;">₹</strong>
      <span style="font-size: 20px; position: relative; right: 2px;">28,000</span>
       <span style="color: rgb(211, 195, 195); position: relative; left: 10px;">M.R.P ₹30,000</span>
+       <button class="btn" ><strong><i class="fa fa-shopping-cart" style="font-size: 14px;"></i></strong></button>    
       <hr style="position: relative; bottom: 27px; left: 10px; width: 20%;">
     </p>
     </div>
@@ -115,6 +122,7 @@
     <p><strong style="font-size: 14px; position: relative; bottom: 10px;">₹</strong>
      <span style="font-size: 20px; position: relative; right: 2px;">28,000</span>
       <span style="color: rgb(211, 195, 195); position: relative; left: 10px;">M.R.P ₹30,000</span>
+       <button class="btn" ><strong><i class="fa fa-shopping-cart" style="font-size: 14px;"></i></strong></button>    
       <hr style="position: relative; bottom: 27px; left: 10px; width: 20%;">
     </p>
     </div>
@@ -126,6 +134,7 @@
     <p><strong style="font-size: 14px; position: relative; bottom: 10px;">₹</strong>
      <span style="font-size: 20px; position: relative; right: 2px;">28,000</span>
       <span style="color: rgb(211, 195, 195); position: relative; left: 10px;">M.R.P ₹30,000</span>
+       <button class="btn" ><strong><i class="fa fa-shopping-cart" style="font-size: 14px;"></i></strong></button>    
       <hr style="position: relative; bottom: 27px; left: 10px; width: 20%;">
     </p>
     </div>
@@ -134,14 +143,63 @@
    </div>
    
 
-   
+   <div class="Navigation">
+     <div class="NavItem">
+    <strong><p style="font-size: 20px;">Get to Know Us</p></strong>
+     <a class="navLink" href="/">About us</a>
+     <br>
+         <a class="navLink" href="/">Careers</a>
+           <br>
+             <a class="navLink" href="/">Press Releases</a>
+              <br>
+             <a class="navLink" href="/">Amazon Science</a>
+     </div> 
+       
+       <div class="NavItem">
+    <strong><p style="font-size: 20px;">Get to Know Us</p></strong>
+     <a class="navLink" href="/">About us</a>
+     <br>
+         <a class="navLink" href="/">Careers</a>
+           <br>
+             <a class="navLink" href="/">Press Releases</a>
+              <br>
+             <a class="navLink" href="/">Amazon Science</a>
+     </div> 
+ 
+         <div class="NavItem">
+    <strong><p style="font-size: 20px;">Get to Know Us</p></strong>
+     <a class="navLink" href="/">About us</a>
+     <br>
+         <a class="navLink" href="/">Careers</a>
+           <br>
+             <a class="navLink" href="/">Press Releases</a>
+              <br>
+             <a class="navLink" href="/">Amazon Science</a>
+     </div> 
+ 
+           <div class="NavItem">
+    <strong><p style="font-size: 20px;">Get to Know Us</p></strong>
+     <a class="navLink" href="/">About us</a>
+     <br>
+         <a class="navLink" href="/">Careers</a>
+           <br>
+             <a class="navLink" href="/">Press Releases</a>
+              <br>
+             <a class="navLink" href="/">Amazon Science</a>
+     </div> 
+      
 
+    
+
+   </div>
+   
+<hr style="border: 1px solid #ebebeb; opacity: 20%; width: 100%; position: relative; top: 220px;"> 
 
 
 
 
 
        
-      
+ <script src="index.js"></script>     
 </body>
 </html>
